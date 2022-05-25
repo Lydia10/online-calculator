@@ -1,0 +1,73 @@
+#root{
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 225, 187);
+} 
+
+.container{
+    border: 2px solid rgb(122, 95, 70);
+    border-radius: 5px;
+    padding: 0px;
+    margin: 10px;
+    width: fit-content; 
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 10px;  
+    background-color: black;
+}
+
+#display{
+    grid-column: 1 / 5;
+    text-align: right; 
+} 
+
+#answer, #expression{
+    text-align: right;
+    color:white;
+    background-color: black;
+    border: none; 
+    font-size: 23px;
+    width:100%;
+}
+
+#zero{
+    grid-column-end: span 2;
+}
+
+#equals{
+    grid-row-end: span 2;
+}
+
+button{
+    background-color: rgb(78, 75, 75);
+    padding: 20px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(240, 235, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(170, 168, 168);
+}
+
+#add, #divide, #subtract, #multiply, #equals{
+    background-color: orange;
+}
+
+#allClear, #clear{
+    background-color: rgb(139, 136, 136);
+}
+
+#clear:hover, #add:hover, #divide:hover, #subtract:hover, #multiply:hover, #equals:hover{
+    background-color: rgb(170, 168, 168);
+}
+
